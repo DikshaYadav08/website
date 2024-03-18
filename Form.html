@@ -1,0 +1,112 @@
+<!Doctype Html>
+<html lang="en">
+<head>
+<title>RP Enterprises</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/f.css" type="text/css" media="screen">
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/cufon-yui.js"></script>
+<script src="js/cufon-replace.js"></script>
+<script src="js/Vegur_500.font.js"></script>
+<script src="js/Ropa_Sans_400.font.js"></script>
+<script src="js/FF-cash.js"></script>
+<script src="js/script.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+<body id="page5">
+<!--==============================header=================================-->
+<header>
+  <div class="border-bot">
+    <div class="main">
+      <h1><a href="index.html">RP ENTERPRISES</a></h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About Us.html">ABOUT US</a></li>
+          <li><a  href="contact.html">Contacts</a></li>
+          <li><a class="active" href="Form.html">Form</a></li>
+		 </ul>
+      </nav>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+<!--==============================content================================-->
+<div class="container">
+<h2>Welcome R.P Enterprise</h2>
+<div class="form-container">
+<form method="post" name="google-sheet">
+<div class="input" >
+Service Name-<select class="service" name="service">
+<option value="Not Selected">--Select Services--</option>
+<option value="PM Kisan">PM Kisan</option>
+<option value="Pan Card">Pan Card</option>
+<option value="Adhar Card">Adhar Card</option>
+<option value="Other">Other</option>
+</select></div>
+<div class="input">Name<input type="text" placeholder= "Enter Name" class="name" required name="name"></div>
+<div class="input">Mobile No.<input type="phone"  placeholder="Enter Mobile No." class="mo" required maxlength="10" name="mobile"></div>
+<div class="input">Adhar Card No.<input type="text"  placeholder="Enter Adhar No. " class="adhar" required maxlength="12" name="adhar"></div>
+<div class="input" >Reg.<input type="text"  placeholder="Enter Reg." class="reg"name="reg"></div>
+<div class="input" >Other<input type="text"  placeholder="Enter Other Query" class="oth" name="other"></div>
+<div class="input"><input type="submit" value="Submit" class="sub" name="submit"></div>
+<div style="text-align:right;font-style:italic;font-weight:bold;">
+Thanks.<br>
+Ram Prakash Prajapati<br>
+Mo.- 9721210074<br>
+Wht.- 9453442710<br>
+</div>
+</form>
+</div>
+</div>
+
+<!--==============================footer=================================-->
+<footer>
+  <div class="main">
+    <div class="container_12">
+      <div class="wrapper">
+        <div class="grid_3">
+          <div class="spacer-1"> <a href="index.html"><img src="images/footer-logo.png" alt=""></a> </div>
+        </div>
+        <div class="grid_5">
+          <div class="indent-top2">
+          Phone:+9197212 10074 <br><span style="font-size:20px">Email: <a href="rpenterprises0901@gmail.com" target="_blank">rpenterprises0901@gmail.com</a></span> 
+			</div>
+        </div>
+        <div class="grid_4">
+          <ul class="list-services">
+            <li><a class="item-1" href="https://www.facebook.com/ramprakash.prajapati.357"><img src="images/facebook.jpg" target="_blank"></a></li>
+            <li><a class="item-2" href="https://wa.me/message/L6GU3HJB2LQEF1"><img src="images/whatsapp.png" target="_blank" ></a></li>
+            <li><a class="item-3" href="https://www.instagram.com/r_p_loving_?utm_source=qr&igsh=MXZlM2ZheG5mYnVhZg==" target="_blank"><img src="images/instagram.jpg"></a></li>
+            <li><a class="item-4" href="https://youtube.com/@RPEnterprises-xb5rg?si=uWCDNhGflI-lL-CH"target="_blank"><img src="images/youtube.png"></a></li>
+          </ul>
+          <span class="footer-text">&copy; 2024
+		  <a class="link color-2" href="#">Privacy Policy</a></span> </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>Cufon.now();</script>
+
+
+<script>
+           const scriptURL = 'https://script.google.com/macros/s/AKfycbx-TEvQ4X8r9caCJVG2dMLjpl3R1wOvgAIqvOURK2Cpu0NczOfE2DrLqPS6hsPayAU/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+</body>
+</html>

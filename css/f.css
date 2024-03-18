@@ -1,0 +1,92 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+body
+{
+font-size:25px;
+background:#f2f2f2;
+}
+.container{
+	background:white;
+	width:500px;
+	padding:35px;
+	margin:50px auto 0;
+
+box-shadow:0 0 7px 5px rgba(0,0,0,0.5);
+}
+.container h2{
+	font-size:25px;
+	line-height:24px;
+	padding:10px;
+	text-align:center;
+	text-decoration:underline;
+}
+.input{
+	width:90%;
+	position:relative;
+    margin:15px auto;
+	}
+
+.name{
+	width:100%;
+	padding:8px 0 8px 40px;
+	font-size:20px;
+	text-align:center;
+}
+.mo{
+	width:100%;
+	padding:8px 0 8px 40px;
+	font-size:18px;
+	text-align:center;
+}
+.adhar{
+	width:100%;
+	padding:8px 0 8px 40px;
+	font-size:18px;
+	text-align:center;
+}
+.reg{
+	width:100%;
+	padding:8px 0 8px 40px;
+	font-size:18px;
+	text-align:center;
+}
+.oth{
+	width:100%;
+	padding:8px 0 8px 40px;
+	margin:0 0 27px 0;
+	font-size:18px;
+	text-align:center;
+}
+.service{
+	display:inline-block;
+	width:100%;
+	padding:8px 0 8px 40px;
+	cursor:pointer;
+	font-size:18px;
+	text-align:center;
+}
+.sub{
+	width:100%;
+	padding:8px 0 8px 40px;
+	margin:0 0 27px 0;
+	font-size:25px;
+	font-weight:bold;
+	cursor:pointer;
+	}
+	@media (max-width:480px)
+	{
+	.container{
+			width:100%;
+		}
+		.input{
+			width:100%;
+		}
+	}
+	
+
+
+
+	
